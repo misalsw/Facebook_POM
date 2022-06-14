@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.ExtentReportListner.ExtentReporterNG"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Custom Program/Facebook/Facebook_POM/src/test/java/com/testcases">
+        <classes>
+            <class name="com.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+<!--            <class name="com.testcases.HomePageTest">-->
+<!--                <methods>-->
+<!--                    <include name="verifyHomePageTitleTest"/>-->
+<!--                    <include name="verifyFindFriendsLink"/>-->
+<!--                    <include name="verifyMarketplaceLink"/>-->
+<!--                    <include name="verifyWatchLink"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.testcases.FindFriendsTest">-->
+<!--                <methods>-->
+<!--                    <include name="verifyFindFriendsTitleTest"/>-->
+<!--                    <include name="verifyFriendRequestLink"/>-->
+<!--                    <include name="verifySuggestionsLink"/>-->
+<!--                    <include name="verifyBirthdaysLink"/>-->
+<!--                    <include name="verifyCustomsLink"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
